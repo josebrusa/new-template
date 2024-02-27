@@ -2902,7 +2902,8 @@ header.major:after {
 }
 
 .spotlight .image {
-	width: 30%;
+	width: 250px;
+	height: 220px;
 	border-radius: 100%;
 	margin: 0 3em 0 0;
 	display: block;
@@ -2910,8 +2911,6 @@ header.major:after {
 
 .spotlight .image img {
 	display: block;
-	border-radius: 100%;
-	width: 100%;
 }
 
 .spotlight .content {
@@ -3072,7 +3071,7 @@ table.alt tbody tr td {
 .wrapper>.inner {
 	margin-left: auto;
 	margin-right: auto;
-	width: 50em;
+	width: 37em;
 }
 
 .wrapper>.inner.alt>* {
@@ -4359,11 +4358,10 @@ a.button {
 }
 
 .img-spotlight img {
-	object-fit: cover;
-	object-position: top;
+	object-fit: contain;
+	object-position: center;
 	width: 250px;
 	height: 250px;
-
 }
 
 #arrow-up {
@@ -4404,3 +4402,33 @@ a.button {
 	opacity: 1;
 	transition: opacity 2s;
 }
+
+.container-input {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-input .input-box {
+	margin-block: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 15em;
+}
+
+.container-input .input-box input[type='text']:focus{
+	background-color:rgb(214, 230, 193);
+}
+.container-input .input-box input[type='email']:valid:required{
+	border:3px solid rgb(252, 98, 137);
+}
+.container-input .input-box input:valid{
+	border:3px solid rgb(141, 233, 99);
+}
+.container-input .input-box input:invalid{
+	border:3px solid rgb(252, 98, 137);
+}
+
