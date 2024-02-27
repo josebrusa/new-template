@@ -4425,22 +4425,15 @@ a.button {
 	border: 5px dotted greenyellow;
 	border-radius: 20px;
 } 
-.container-input .input-box input[type='text']:focus:valid{
-	outline: none;
-	background-color:rgb(214, 230, 193);
-	border: 5px dotted greenyellow;
+
+.container-input .input-box input:focus:required {
+	background-color: rgb(214, 230, 193);
+	border:3px dashed rgb(252, 98, 137);
 }
-.container-input .input-box input[type='text']:invalid{
-	border:3px solid rgb(252, 98, 137);
+.container-input .input-box input[type='text']:valid,
+.container-input .input-box input[type='email']:valid{
+	border:3px dashed rgb(141, 233, 99);
 }
 
-.container-input .input-box input[type='email']:required{
-	border:3px solid rgb(252, 98, 137);
-	outline: none;
-}
-.container-input .input-box input[type='email']:valid{
-	border: 5px dotted greenyellow;
-	outline: none;
-}
 
 
